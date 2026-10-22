@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0b3d91">
 
     <title>E.E. Presidente Arthur Bernardes da Silva</title>
 
@@ -12,129 +13,362 @@
 
 <body>
 
-    <header>
-        <div class="logo">
-            <span>🎓</span>
-            <h1>E.E. Presidente Arthur Bernardes da Silva</h1>
-        </div>
+    <header class="topo">
+        <div class="container navegacao">
+            <a href="#inicio" class="logo">
+                <span class="logo-icone">E</span>
+                <span class="logo-texto">
+                    E.E. Presidente Arthur Bernardes da Silva
+                    <small>EDUCAÇÃO • CONHECIMENTO • FUTURO</small>
+                </span>
+            </a>
 
-        <nav>
-            <a href="#inicio">Início</a>
-            <a href="#sobre">Sobre</a>
-            <a href="#galeria">Galeria</a>
-            <a href="#projeto">Projeto</a>
-        </nav>
+            <nav class="menu">
+                <a href="#inicio">Início</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#galeria">Galeria</a>
+                <a href="#projeto" class="menu-destaque">Nosso projeto ↗</a>
+            </nav>
+        </div>
     </header>
 
     <main>
 
         <section id="inicio" class="banner">
-            <div class="banner-conteudo">
-                <p class="subtitulo">NOSSA ESCOLA, NOSSA HISTÓRIA</p>
+            <div class="banner-forma forma-1"></div>
+            <div class="banner-forma forma-2"></div>
 
-                <h2>Bem-vindos à nossa escola!</h2>
+            <div class="container banner-grid">
+                <div class="banner-conteudo">
+                    <span class="etiqueta">
+                        <span class="ponto"></span>
+                        NOSSA ESCOLA, NOSSA HISTÓRIA
+                    </span>
 
-                <p>
-                    Um ambiente de aprendizagem, convivência
-                    e conhecimento, onde cada dia é uma nova
-                    oportunidade de crescer.
-                </p>
+                    <h1>
+                        Um lugar para<br>
+                        aprender, crescer<br>
+                        e <span>transformar o futuro.</span>
+                    </h1>
 
-                <a href="#galeria" class="botao">
-                    Conheça nossa escola
-                </a>
+                    <p>
+                        Seja bem-vindo à Escola Estadual Presidente Arthur
+                        Bernardes da Silva. Um espaço de conhecimento,
+                        convivência e oportunidades para construir novos caminhos.
+                    </p>
+
+                    <div class="banner-botoes">
+                        <a href="#sobre" class="botao botao-azul">
+                            Conheça nossa escola <span>→</span>
+                        </a>
+
+                        <a href="#galeria" class="botao botao-branco">
+                            Ver fotografias
+                        </a>
+                    </div>
+
+                    <div class="banner-assinatura">
+                        <span class="assinatura-icone">✦</span>
+                        <div>
+                            <strong>Educação que faz a diferença</strong>
+                            <small>Conhecimento para toda a vida.</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="banner-visual">
+                    <div class="imagem-principal">
+                        <img
+                            src="imagens/fachada.jpeg"
+                            alt="Fachada da Escola Estadual Presidente Arthur Bernardes da Silva"
+                            onerror="this.style.display='none';this.parentElement.classList.add('sem-foto')"
+                        >
+                        <div class="aviso-foto">
+                            <span>🏫</span>
+                            <strong>Nossa escola</strong>
+                            <small>Educação e novas oportunidades</small>
+                        </div>
+                    </div>
+
+                    <div class="cartao-flutuante">
+                        <span class="estrela">✦</span>
+                        <div>
+                            <strong>Aprender juntos</strong>
+                            <small>Construindo o amanhã</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container banner-rodape">
+                <span>CONHECIMENTO</span>
+                <span class="linha"></span>
+                <span>RESPEITO</span>
+                <span class="linha"></span>
+                <span>FUTURO</span>
             </div>
         </section>
 
-        <section id="sobre" class="secao">
-            <h2>Sobre a escola</h2>
+        <section id="sobre" class="secao sobre">
+            <div class="container sobre-grid">
+                <div class="sobre-imagem">
+                    <img
+                        src="imagens/patio.jpeg"
+                        alt="Pátio da escola"
+                        loading="lazy"
+                    >
+                    <div class="imagem-legenda">
+                        <span>✧</span>
+                        <div>
+                            <strong>Um espaço de convivência</strong>
+                            <small>Fazendo parte da nossa história</small>
+                        </div>
+                    </div>
+                </div>
 
-            <p>
-                A Escola Estadual Presidente Arthur Bernardes
-                da Silva é o tema deste projeto escolar, criado
-                para apresentar seus espaços por meio de
-                fotografias e de uma página desenvolvida
-                com HTML e CSS.
-            </p>
+                <div class="sobre-texto">
+                    <span class="subtitulo">CONHEÇA NOSSA ESCOLA</span>
 
-            <p>
-                A proposta é valorizar o ambiente escolar
-                e mostrar um pouco dos locais que fazem
-                parte do dia a dia da comunidade escolar.
-            </p>
+                    <h2>
+                        Cada espaço guarda uma história.
+                        <span>Cada aluno, um futuro.</span>
+                    </h2>
+
+                    <p>
+                        A Escola Estadual Presidente Arthur Bernardes da Silva
+                        é o tema deste projeto escolar, desenvolvido para
+                        apresentar seus ambientes e valorizar o espaço que
+                        faz parte da rotina da comunidade escolar.
+                    </p>
+
+                    <p>
+                        Por meio de fotografias e informações, queremos mostrar
+                        um pouco da nossa escola, seus espaços de convivência
+                        e a importância da educação na formação dos estudantes.
+                    </p>
+
+                    <a href="#galeria" class="link-azul">
+                        Explore nossa galeria <span>↗</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="valores">
+            <div class="container">
+                <div class="titulo-secao">
+                    <span class="subtitulo">O QUE NOS INSPIRA</span>
+                    <h2>Uma escola, muitos <span>caminhos.</span></h2>
+                    <p>Valores que tornam a experiência escolar especial.</p>
+                </div>
+
+                <div class="valores-grid">
+                    <article class="valor-card">
+                        <div class="valor-icone">✦</div>
+                        <span class="numero">01 / SABER</span>
+                        <h3>Conhecimento</h3>
+                        <p>
+                            Aprender, descobrir e desenvolver novas habilidades
+                            para compreender melhor o mundo.
+                        </p>
+                    </article>
+
+                    <article class="valor-card valor-destaque">
+                        <div class="valor-icone">♡</div>
+                        <span class="numero">02 / CONVIVER</span>
+                        <h3>Respeito</h3>
+                        <p>
+                            Valorizar as diferenças, cultivar amizades e
+                            construir relações positivas.
+                        </p>
+                    </article>
+
+                    <article class="valor-card">
+                        <div class="valor-icone">◇</div>
+                        <span class="numero">03 / CONSTRUIR</span>
+                        <h3>Futuro</h3>
+                        <p>
+                            Desenvolver ideias, descobrir talentos e acreditar
+                            nas possibilidades que a educação oferece.
+                        </p>
+                    </article>
+                </div>
+            </div>
         </section>
 
         <section id="galeria" class="secao galeria">
-            <h2>Galeria de fotos</h2>
+            <div class="container">
+                <div class="galeria-topo">
+                    <div>
+                        <span class="subtitulo">UM OLHAR SOBRE NOSSA ESCOLA</span>
+                        <h2>Nossa escola em <span>imagens.</span></h2>
+                        <p>
+                            Conheça alguns dos espaços que fazem parte
+                            do cotidiano escolar.
+                        </p>
+                    </div>
 
-            <p class="descricao">
-                Conheça alguns espaços da nossa escola.
-            </p>
+                    <span class="contador-fotos">04 FOTOGRAFIAS</span>
+                </div>
 
-            <div class="grade-fotos">
+                <div class="galeria-grid">
+                    <figure class="foto foto-grande">
+                        <img
+                            src="imagens/fachada.jpeg"
+                            alt="Fachada da escola"
+                            loading="lazy"
+                        >
+                        <figcaption>
+                            <span>01</span>
+                            <div>
+                                <strong>Nossa fachada</strong>
+                                <small>A entrada da escola</small>
+                            </div>
+                        </figcaption>
+                    </figure>
 
-                <figure>
-                    <img
-                        src="imagens/fachada.jpeg"
-                        alt="Fachada da Escola Estadual Presidente Arthur Bernardes da Silva"
-                    >
-                    <figcaption>Fachada da escola</figcaption>
-                </figure>
+                    <figure class="foto">
+                        <img
+                            src="imagens/patio.jpeg"
+                            alt="Pátio interno da escola"
+                            loading="lazy"
+                        >
+                        <figcaption>
+                            <span>02</span>
+                            <div>
+                                <strong>Pátio interno</strong>
+                                <small>Convivência e encontros</small>
+                            </div>
+                        </figcaption>
+                    </figure>
 
-                <figure>
-                    <img
-                        src="imagens/patio.jpeg"
-                        alt="Pátio interno da escola"
-                    >
-                    <figcaption>Pátio interno</figcaption>
-                </figure>
+                    <figure class="foto">
+                        <img
+                            src="imagens/ambiente.jpeg"
+                            alt="Ambiente interno com mesas e computadores"
+                            loading="lazy"
+                        >
+                        <figcaption>
+                            <span>03</span>
+                            <div>
+                                <strong>Ambiente escolar</strong>
+                                <small>Espaços de aprendizagem</small>
+                            </div>
+                        </figcaption>
+                    </figure>
 
-                <figure>
-                    <img
-                        src="imagens/ambiente.jpeg"
-                        alt="Ambiente interno com mesas e computadores"
-                    >
-                    <figcaption>Ambiente interno</figcaption>
-                </figure>
-
-                <figure>
-                    <img
-                        src="imagens/area-verde.jpeg"
-                        alt="Área verde arborizada e quadra da escola"
-                    >
-                    <figcaption>Área verde e esportes</figcaption>
-                </figure>
-
+                    <figure class="foto foto-larga">
+                        <img
+                            src="imagens/area-verde.jpeg"
+                            alt="Área verde e quadra da escola"
+                            loading="lazy"
+                        >
+                        <figcaption>
+                            <span>04</span>
+                            <div>
+                                <strong>Área verde e esportes</strong>
+                                <small>Espaços para diferentes atividades</small>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
             </div>
         </section>
 
-        <section id="projeto" class="secao projeto">
-            <h2>Sobre o projeto</h2>
+        <section id="projeto" class="projeto">
+            <div class="container projeto-grid">
+                <div class="projeto-texto">
+                    <span class="subtitulo subtitulo-claro">NOSSO TRABALHO</span>
 
-            <p>
-                Este site foi desenvolvido como um projeto
-                escolar utilizando HTML e CSS.
-            </p>
+                    <h2>
+                        Tecnologia e criatividade
+                        <span>em um só projeto.</span>
+                    </h2>
 
-            <div class="tecnologias">
-                <div class="tecnologia">
-                    <h3>HTML</h3>
-                    <p>Estrutura e organização do conteúdo.</p>
+                    <p>
+                        Este site foi desenvolvido como um projeto escolar
+                        utilizando HTML e CSS. A proposta é apresentar
+                        a escola em um ambiente digital simples, moderno
+                        e acessível.
+                    </p>
+
+                    <div class="tecnologias">
+                        <div class="tecnologia">
+                            <strong>HTML5</strong>
+                            <small>Estrutura do site</small>
+                        </div>
+
+                        <div class="tecnologia">
+                            <strong>CSS3</strong>
+                            <small>Design e responsividade</small>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="tecnologia">
-                    <h3>CSS</h3>
-                    <p>Cores, layout, imagens e responsividade.</p>
+                <div class="projeto-simbolo">
+                    <div class="simbolo-circulo">
+                        <span>&lt;/&gt;</span>
+                    </div>
+                    <span>CRIATIVIDADE • APRENDIZADO • INOVAÇÃO</span>
                 </div>
+            </div>
+        </section>
+
+        <section class="mensagem-final">
+            <div class="container mensagem-conteudo">
+                <span class="mensagem-estrela">✦</span>
+                <h2>O futuro começa com <span>o conhecimento.</span></h2>
+                <p>
+                    Nossa escola faz parte de muitas histórias.
+                    Que cada uma delas tenha um futuro cheio de possibilidades.
+                </p>
+                <a href="#inicio" class="botao botao-azul">
+                    Voltar ao início ↑
+                </a>
             </div>
         </section>
 
     </main>
 
-    <footer>
-        <h3>E.E. Presidente Arthur Bernardes da Silva</h3>
-        <p>Projeto escolar desenvolvido com HTML e CSS.</p>
-        <p class="credito">Trabalho apresentado para fins educacionais.</p>
+    <footer class="rodape">
+        <div class="container rodape-principal">
+            <div class="rodape-identidade">
+                <a href="#inicio" class="logo logo-rodape">
+                    <span class="logo-icone">E</span>
+                    <span class="logo-texto">
+                        E.E. Presidente Arthur Bernardes da Silva
+                        <small>EDUCAÇÃO • CONHECIMENTO • FUTURO</small>
+                    </span>
+                </a>
+
+                <p>
+                    Um projeto escolar dedicado a apresentar e valorizar
+                    nossa comunidade escolar.
+                </p>
+            </div>
+
+            <div class="rodape-links">
+                <h3>NAVEGAÇÃO</h3>
+                <a href="#inicio">Início</a>
+                <a href="#sobre">Sobre a escola</a>
+                <a href="#galeria">Galeria de fotos</a>
+                <a href="#projeto">Sobre o projeto</a>
+            </div>
+
+            <div class="rodape-links">
+                <h3>TECNOLOGIAS</h3>
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>GitHub Pages</span>
+            </div>
+        </div>
+
+        <div class="rodape-final">
+            <div class="container rodape-final-conteudo">
+                <p>© 2026 E.E. Presidente Arthur Bernardes da Silva</p>
+                <p>Projeto desenvolvido para fins educacionais.</p>
+            </div>
+        </div>
     </footer>
 
 </body>
