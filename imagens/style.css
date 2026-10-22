@@ -373,3 +373,48 @@
 
 </body>
 </html>
+#menu-toggle {
+    display: none;
+}
+
+.menu-botao {
+    display: none;
+}
+
+@media (max-width: 680px) {
+    .navegacao::after {
+        display: none;
+    }
+
+    .menu-botao {
+        display: grid;
+        place-items: center;
+        width: 40px;
+        height: 40px;
+        flex-shrink: 0;
+        border-radius: 9px;
+        color: var(--azul);
+        background: var(--azul-claro);
+        cursor: pointer;
+        font-size: 21px;
+    }
+
+    .menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        padding: 15px 5% 22px;
+        background: var(--branco);
+        border-bottom: 1px solid var(--borda);
+    }
+
+    #menu-toggle:checked ~ .menu {
+        display: flex;
+    }
+
+    .menu a {
+        width: 100%;
+    }
+}
