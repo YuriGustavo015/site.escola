@@ -1,389 +1,607 @@
 
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#0b3d91">
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap');
 
-    <title>E.E. Presidente Arthur Bernardes da Silva</title>
-
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-    <header class="topo">
-        <div class="container navegacao">
-            <a href="#inicio" class="logo">
-                <span class="logo-icone">E</span>
-                <span class="logo-texto">
-                    E.E. Presidente Arthur Bernardes da Silva
-                    <small>EDUCAÇÃO • CONHECIMENTO • FUTURO</small>
-                </span>
-            </a>
-
-            <nav class="menu">
-                <a href="#inicio">Início</a>
-                <a href="#sobre">Sobre</a>
-                <a href="#galeria">Galeria</a>
-                <a href="#projeto" class="menu-destaque">Nosso projeto ↗</a>
-            </nav>
-        </div>
-    </header>
-
-    <main>
-
-        <section id="inicio" class="banner">
-            <div class="banner-forma forma-1"></div>
-            <div class="banner-forma forma-2"></div>
-
-            <div class="container banner-grid">
-                <div class="banner-conteudo">
-                    <span class="etiqueta">
-                        <span class="ponto"></span>
-                        NOSSA ESCOLA, NOSSA HISTÓRIA
-                    </span>
-
-                    <h1>
-                        Um lugar para<br>
-                        aprender, crescer<br>
-                        e <span>transformar o futuro.</span>
-                    </h1>
-
-                    <p>
-                        Seja bem-vindo à Escola Estadual Presidente Arthur
-                        Bernardes da Silva. Um espaço de conhecimento,
-                        convivência e oportunidades para construir novos caminhos.
-                    </p>
-
-                    <div class="banner-botoes">
-                        <a href="#sobre" class="botao botao-azul">
-                            Conheça nossa escola <span>→</span>
-                        </a>
-
-                        <a href="#galeria" class="botao botao-branco">
-                            Ver fotografias
-                        </a>
-                    </div>
-
-                    <div class="banner-assinatura">
-                        <span class="assinatura-icone">✦</span>
-                        <div>
-                            <strong>Educação que faz a diferença</strong>
-                            <small>Conhecimento para toda a vida.</small>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="banner-visual">
-                    <div class="imagem-principal">
-                        <img
-                            src="imagens/fachada.jpeg"
-                            alt="Fachada da Escola Estadual Presidente Arthur Bernardes da Silva"
-                            onerror="this.style.display='none';this.parentElement.classList.add('sem-foto')"
-                        >
-                        <div class="aviso-foto">
-                            <span>🏫</span>
-                            <strong>Nossa escola</strong>
-                            <small>Educação e novas oportunidades</small>
-                        </div>
-                    </div>
-
-                    <div class="cartao-flutuante">
-                        <span class="estrela">✦</span>
-                        <div>
-                            <strong>Aprender juntos</strong>
-                            <small>Construindo o amanhã</small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container banner-rodape">
-                <span>CONHECIMENTO</span>
-                <span class="linha"></span>
-                <span>RESPEITO</span>
-                <span class="linha"></span>
-                <span>FUTURO</span>
-            </div>
-        </section>
-
-        <section id="sobre" class="secao sobre">
-            <div class="container sobre-grid">
-                <div class="sobre-imagem">
-                    <img
-                        src="imagens/patio.jpeg"
-                        alt="Pátio da escola"
-                        loading="lazy"
-                    >
-                    <div class="imagem-legenda">
-                        <span>✧</span>
-                        <div>
-                            <strong>Um espaço de convivência</strong>
-                            <small>Fazendo parte da nossa história</small>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="sobre-texto">
-                    <span class="subtitulo">CONHEÇA NOSSA ESCOLA</span>
-
-                    <h2>
-                        Cada espaço guarda uma história.
-                        <span>Cada aluno, um futuro.</span>
-                    </h2>
-
-                    <p>
-                        A Escola Estadual Presidente Arthur Bernardes da Silva
-                        é o tema deste projeto escolar, desenvolvido para
-                        apresentar seus ambientes e valorizar o espaço que
-                        faz parte da rotina da comunidade escolar.
-                    </p>
-
-                    <p>
-                        Por meio de fotografias e informações, queremos mostrar
-                        um pouco da nossa escola, seus espaços de convivência
-                        e a importância da educação na formação dos estudantes.
-                    </p>
-
-                    <a href="#galeria" class="link-azul">
-                        Explore nossa galeria <span>↗</span>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <section class="valores">
-            <div class="container">
-                <div class="titulo-secao">
-                    <span class="subtitulo">O QUE NOS INSPIRA</span>
-                    <h2>Uma escola, muitos <span>caminhos.</span></h2>
-                    <p>Valores que tornam a experiência escolar especial.</p>
-                </div>
-
-                <div class="valores-grid">
-                    <article class="valor-card">
-                        <div class="valor-icone">✦</div>
-                        <span class="numero">01 / SABER</span>
-                        <h3>Conhecimento</h3>
-                        <p>
-                            Aprender, descobrir e desenvolver novas habilidades
-                            para compreender melhor o mundo.
-                        </p>
-                    </article>
-
-                    <article class="valor-card valor-destaque">
-                        <div class="valor-icone">♡</div>
-                        <span class="numero">02 / CONVIVER</span>
-                        <h3>Respeito</h3>
-                        <p>
-                            Valorizar as diferenças, cultivar amizades e
-                            construir relações positivas.
-                        </p>
-                    </article>
-
-                    <article class="valor-card">
-                        <div class="valor-icone">◇</div>
-                        <span class="numero">03 / CONSTRUIR</span>
-                        <h3>Futuro</h3>
-                        <p>
-                            Desenvolver ideias, descobrir talentos e acreditar
-                            nas possibilidades que a educação oferece.
-                        </p>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section id="galeria" class="secao galeria">
-            <div class="container">
-                <div class="galeria-topo">
-                    <div>
-                        <span class="subtitulo">UM OLHAR SOBRE NOSSA ESCOLA</span>
-                        <h2>Nossa escola em <span>imagens.</span></h2>
-                        <p>
-                            Conheça alguns dos espaços que fazem parte
-                            do cotidiano escolar.
-                        </p>
-                    </div>
-
-                    <span class="contador-fotos">04 FOTOGRAFIAS</span>
-                </div>
-
-                <div class="galeria-grid">
-                    <figure class="foto foto-grande">
-                        <img
-                            src="imagens/fachada.jpeg"
-                            alt="Fachada da escola"
-                            loading="lazy"
-                        >
-                        <figcaption>
-                            <span>01</span>
-                            <div>
-                                <strong>Nossa fachada</strong>
-                                <small>A entrada da escola</small>
-                            </div>
-                        </figcaption>
-                    </figure>
-
-                    <figure class="foto">
-                        <img
-                            src="imagens/patio.jpeg"
-                            alt="Pátio interno da escola"
-                            loading="lazy"
-                        >
-                        <figcaption>
-                            <span>02</span>
-                            <div>
-                                <strong>Pátio interno</strong>
-                                <small>Convivência e encontros</small>
-                            </div>
-                        </figcaption>
-                    </figure>
-
-                    <figure class="foto">
-                        <img
-                            src="imagens/ambiente.jpeg"
-                            alt="Ambiente interno com mesas e computadores"
-                            loading="lazy"
-                        >
-                        <figcaption>
-                            <span>03</span>
-                            <div>
-                                <strong>Ambiente escolar</strong>
-                                <small>Espaços de aprendizagem</small>
-                            </div>
-                        </figcaption>
-                    </figure>
-
-                    <figure class="foto foto-larga">
-                        <img
-                            src="imagens/area-verde.jpeg"
-                            alt="Área verde e quadra da escola"
-                            loading="lazy"
-                        >
-                        <figcaption>
-                            <span>04</span>
-                            <div>
-                                <strong>Área verde e esportes</strong>
-                                <small>Espaços para diferentes atividades</small>
-                            </div>
-                        </figcaption>
-                    </figure>
-                </div>
-            </div>
-        </section>
-
-        <section id="projeto" class="projeto">
-            <div class="container projeto-grid">
-                <div class="projeto-texto">
-                    <span class="subtitulo subtitulo-claro">NOSSO TRABALHO</span>
-
-                    <h2>
-                        Tecnologia e criatividade
-                        <span>em um só projeto.</span>
-                    </h2>
-
-                    <p>
-                        Este site foi desenvolvido como um projeto escolar
-                        utilizando HTML e CSS. A proposta é apresentar
-                        a escola em um ambiente digital simples, moderno
-                        e acessível.
-                    </p>
-
-                    <div class="tecnologias">
-                        <div class="tecnologia">
-                            <strong>HTML5</strong>
-                            <small>Estrutura do site</small>
-                        </div>
-
-                        <div class="tecnologia">
-                            <strong>CSS3</strong>
-                            <small>Design e responsividade</small>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="projeto-simbolo">
-                    <div class="simbolo-circulo">
-                        <span>&lt;/&gt;</span>
-                    </div>
-                    <span>CRIATIVIDADE • APRENDIZADO • INOVAÇÃO</span>
-                </div>
-            </div>
-        </section>
-
-        <section class="mensagem-final">
-            <div class="container mensagem-conteudo">
-                <span class="mensagem-estrela">✦</span>
-                <h2>O futuro começa com <span>o conhecimento.</span></h2>
-                <p>
-                    Nossa escola faz parte de muitas histórias.
-                    Que cada uma delas tenha um futuro cheio de possibilidades.
-                </p>
-                <a href="#inicio" class="botao botao-azul">
-                    Voltar ao início ↑
-                </a>
-            </div>
-        </section>
-
-    </main>
-
-    <footer class="rodape">
-        <div class="container rodape-principal">
-            <div class="rodape-identidade">
-                <a href="#inicio" class="logo logo-rodape">
-                    <span class="logo-icone">E</span>
-                    <span class="logo-texto">
-                        E.E. Presidente Arthur Bernardes da Silva
-                        <small>EDUCAÇÃO • CONHECIMENTO • FUTURO</small>
-                    </span>
-                </a>
-
-                <p>
-                    Um projeto escolar dedicado a apresentar e valorizar
-                    nossa comunidade escolar.
-                </p>
-            </div>
-
-            <div class="rodape-links">
-                <h3>NAVEGAÇÃO</h3>
-                <a href="#inicio">Início</a>
-                <a href="#sobre">Sobre a escola</a>
-                <a href="#galeria">Galeria de fotos</a>
-                <a href="#projeto">Sobre o projeto</a>
-            </div>
-
-            <div class="rodape-links">
-                <h3>TECNOLOGIAS</h3>
-                <span>HTML5</span>
-                <span>CSS3</span>
-                <span>GitHub Pages</span>
-            </div>
-        </div>
-
-        <div class="rodape-final">
-            <div class="container rodape-final-conteudo">
-                <p>© 2026 E.E. Presidente Arthur Bernardes da Silva</p>
-                <p>Projeto desenvolvido para fins educacionais.</p>
-            </div>
-        </div>
-    </footer>
-
-</body>
-</html>
-#menu-toggle {
-    display: none;
+:root {
+    --azul: #1458d4;
+    --escuro: #071d43;
+    --claro: #edf4ff;
+    --texto: #243550;
+    --cinza: #718096;
+    --branco: #ffffff;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    color: var(--texto);
+    background: var(--branco);
+    line-height: 1.7;
+}
+
+img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: min(1120px, 90%);
+    margin: auto;
+}
+
+.secao {
+    padding: 90px 0;
+}
+
+/* MENU */
+
+.topo {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: #ffffffed;
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid #e7edf6;
+}
+
+.navegacao {
+    min-height: 82px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--escuro);
+}
+
+.simbolo {
+    width: 45px;
+    height: 45px;
+    display: grid;
+    place-items: center;
+    background: var(--azul);
+    color: white;
+    border-radius: 13px 13px 13px 4px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.logo strong {
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+.logo small {
+    display: block;
+    color: var(--cinza);
+    font-size: 8px;
+    letter-spacing: 1px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.menu a {
+    font-size: 12px;
+    font-weight: 700;
+    color: #53627b;
+    transition: .25s;
+}
+
+.menu a:hover {
+    color: var(--azul);
+}
+
+#menu-toggle,
 .menu-botao {
     display: none;
 }
 
-@media (max-width: 680px) {
-    .navegacao::after {
-        display: none;
+/* BANNER */
+
+.banner {
+    overflow: hidden;
+    background: linear-gradient(120deg, #f1f6ff, #ffffff 60%, #e6efff);
+}
+
+.banner-grid {
+    min-height: 590px;
+    padding-top: 65px;
+    padding-bottom: 65px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 65px;
+}
+
+.etiqueta {
+    display: inline-block;
+    margin-bottom: 17px;
+    color: var(--azul);
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.8px;
+}
+
+.banner h1,
+.sobre h2,
+.titulo h2,
+.projeto h2,
+.mensagem h2 {
+    font-family: 'Poppins', sans-serif;
+    color: var(--escuro);
+    font-weight: 800;
+    line-height: 1.3;
+    letter-spacing: -1.5px;
+}
+
+.banner h1 {
+    font-size: clamp(40px, 5vw, 62px);
+}
+
+.banner h1 span,
+.sobre h2 span,
+.titulo h2 span,
+.mensagem h2 span {
+    color: var(--azul);
+}
+
+.banner-texto > p {
+    max-width: 470px;
+    margin-top: 22px;
+    color: var(--cinza);
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.botao {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 26px;
+    padding: 14px 21px;
+    background: var(--azul);
+    color: white;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 800;
+    box-shadow: 0 8px 22px #1458d42b;
+    transition: .3s;
+}
+
+.botao:hover {
+    transform: translateY(-3px);
+    background: var(--escuro);
+}
+
+.frase {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 32px;
+}
+
+.frase > span {
+    width: 42px;
+    height: 42px;
+    display: grid;
+    place-items: center;
+    border-radius: 12px;
+    background: #dce9ff;
+    color: var(--azul);
+    font-size: 23px;
+}
+
+.frase strong,
+.frase small {
+    display: block;
+}
+
+.frase strong {
+    font-size: 12px;
+}
+
+.frase small {
+    color: var(--cinza);
+    font-size: 10px;
+}
+
+.banner-foto {
+    height: 430px;
+    position: relative;
+    border-radius: 170px 170px 18px 18px;
+    background: #dbe8ff;
+    box-shadow: 12px 12px 0 #c2d6ff;
+}
+
+.banner-foto > img {
+    height: 100%;
+    border-radius: inherit;
+}
+
+.foto-fallback {
+    display: none;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: var(--escuro);
+    text-align: center;
+    padding: 20px;
+}
+
+.foto-fallback span {
+    font-size: 65px;
+}
+
+.foto-fallback strong {
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+}
+
+.foto-fallback small {
+    font-size: 12px;
+}
+
+.selo {
+    position: absolute;
+    right: -20px;
+    bottom: 35px;
+    padding: 17px 20px;
+    background: white;
+    border-radius: 12px;
+    color: var(--azul);
+    font-size: 11px;
+    font-weight: 800;
+    line-height: 1.8;
+    text-align: center;
+    box-shadow: 0 10px 30px #071d431c;
+}
+
+/* SOBRE */
+
+.sobre-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 65px;
+}
+
+.sobre-foto {
+    height: 390px;
+    padding: 0 0 15px 15px;
+    background: linear-gradient(135deg, transparent 50%, #e4eeff 50%);
+    border-radius: 14px;
+}
+
+.sobre-foto img {
+    height: 100%;
+    border-radius: 12px 90px 12px 12px;
+    background: var(--claro);
+}
+
+.sobre h2,
+.titulo h2,
+.mensagem h2 {
+    font-size: clamp(28px, 3.5vw, 40px);
+}
+
+.sobre p {
+    margin-top: 18px;
+    color: var(--cinza);
+    font-size: 13px;
+    line-height: 2;
+}
+
+.link {
+    display: inline-block;
+    margin-top: 24px;
+    color: var(--azul);
+    font-size: 12px;
+    font-weight: 800;
+}
+
+/* TÍTULOS E VALORES */
+
+.valores {
+    background: #f5f8fd;
+}
+
+.titulo {
+    text-align: center;
+    margin: 0 auto 42px;
+}
+
+.titulo p {
+    margin-top: 12px;
+    color: var(--cinza);
+    font-size: 13px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.card {
+    padding: 30px;
+    border: 1px solid #e4eaf4;
+    background: white;
+    border-radius: 14px;
+    transition: .3s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px #071d4310;
+}
+
+.icone {
+    display: grid;
+    place-items: center;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 22px;
+    border-radius: 13px;
+    background: #e8f0ff;
+    color: var(--azul);
+    font-size: 25px;
+}
+
+.card h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 19px;
+    color: var(--escuro);
+}
+
+.card p {
+    margin-top: 10px;
+    color: var(--cinza);
+    font-size: 12px;
+    line-height: 1.9;
+}
+
+.card-azul {
+    background: var(--azul);
+    border-color: var(--azul);
+}
+
+.card-azul .icone {
+    background: #ffffff25;
+    color: white;
+}
+
+.card-azul h3,
+.card-azul p {
+    color: white;
+}
+
+/* GALERIA */
+
+.fotos {
+    display: grid;
+    grid-template-columns: 1.15fr 1fr 1fr;
+    gap: 17px;
+}
+
+.foto {
+    height: 260px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    background: #dce9ff;
+}
+
+.foto-grande {
+    grid-row: span 2;
+    height: 537px;
+}
+
+.foto-larga {
+    grid-column: span 2;
+}
+
+.foto img {
+    height: 100%;
+    transition: transform .5s;
+}
+
+.foto:hover img {
+    transform: scale(1.06);
+}
+
+.foto::after {
+    content: "";
+    position: absolute;
+    inset: 40% 0 0;
+    background: linear-gradient(transparent, #071d43e8);
+}
+
+.foto figcaption {
+    position: absolute;
+    z-index: 1;
+    bottom: 17px;
+    left: 17px;
+    right: 12px;
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+/* PROJETO */
+
+.projeto {
+    background: linear-gradient(120deg, #071d43, #1458d4);
+}
+
+.projeto-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.etiqueta-clara {
+    color: #b7d0ff;
+}
+
+.projeto h2 {
+    color: white;
+    font-size: clamp(29px, 4vw, 43px);
+}
+
+.projeto-grid > div:first-child > p {
+    margin-top: 20px;
+    color: #d4e0f6;
+    font-size: 13px;
+    line-height: 1.9;
+}
+
+.tecnologias {
+    display: grid;
+    gap: 13px;
+}
+
+.tecnologias > div {
+    padding: 17px 20px;
+    border: 1px solid #ffffff35;
+    border-radius: 10px;
+    background: #ffffff0c;
+}
+
+.tecnologias strong,
+.tecnologias span {
+    display: block;
+}
+
+.tecnologias strong {
+    color: white;
+    font-size: 13px;
+}
+
+.tecnologias span {
+    margin-top: 4px;
+    color: #cbdafa;
+    font-size: 11px;
+}
+
+/* MENSAGEM FINAL */
+
+.mensagem {
+    text-align: center;
+    background: #edf4ff;
+}
+
+.estrela {
+    color: var(--azul);
+    font-size: 32px;
+}
+
+.mensagem p {
+    max-width: 580px;
+    margin: 15px auto 0;
+    color: var(--cinza);
+    font-size: 13px;
+}
+
+/* RODAPÉ */
+
+.rodape {
+    background: #061731;
+    color: white;
+}
+
+.rodape-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 50px;
+    padding-top: 48px;
+    padding-bottom: 40px;
+}
+
+.rodape h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+
+.rodape h4 {
+    margin-bottom: 12px;
+    color: #9ebfff;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+}
+
+.rodape p {
+    margin-top: 12px;
+    color: #b4c3da;
+    font-size: 12px;
+}
+
+.rodape-grid > div:last-child {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.rodape a {
+    color: #c6d3e8;
+    font-size: 12px;
+}
+
+.rodape a:hover {
+    color: white;
+}
+
+.rodape-final {
+    padding: 20px 5%;
+    border-top: 1px solid #ffffff20;
+    color: #9eafc9;
+    text-align: center;
+    font-size: 10px;
+}
+
+/* CELULAR E TABLET */
+
+@media (max-width: 760px) {
+    .navegacao {
+        min-height: 75px;
+    }
+
+    .logo {
+        max-width: calc(100% - 50px);
+    }
+
+    .logo strong {
+        font-size: 10px;
     }
 
     .menu-botao {
@@ -392,11 +610,11 @@
         width: 40px;
         height: 40px;
         flex-shrink: 0;
-        border-radius: 9px;
+        background: var(--claro);
         color: var(--azul);
-        background: var(--azul-claro);
+        border-radius: 9px;
+        font-size: 22px;
         cursor: pointer;
-        font-size: 21px;
     }
 
     .menu {
@@ -405,9 +623,12 @@
         top: 100%;
         left: 0;
         right: 0;
-        padding: 15px 5% 22px;
-        background: var(--branco);
-        border-bottom: 1px solid var(--borda);
+        padding: 15px 5% 20px;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        background: white;
+        box-shadow: 0 12px 20px #071d4310;
     }
 
     #menu-toggle:checked ~ .menu {
@@ -415,6 +636,92 @@
     }
 
     .menu a {
-        width: 100%;
+        padding: 12px 0;
+    }
+
+    .banner-grid {
+        grid-template-columns: 1fr;
+        gap: 42px;
+        padding-top: 55px;
+        padding-bottom: 55px;
+    }
+
+    .banner h1 {
+        font-size: clamp(40px, 10vw, 56px);
+    }
+
+    .banner-foto {
+        width: 90%;
+        height: 330px;
+        margin: auto;
+        border-radius: 140px 140px 15px 15px;
+    }
+
+    .sobre-grid,
+    .projeto-grid {
+        grid-template-columns: 1fr;
+        gap: 38px;
+    }
+
+    .sobre-foto {
+        height: 320px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .fotos {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+
+    .foto {
+        height: 220px;
+    }
+
+    .foto-grande {
+        grid-column: span 2;
+        grid-row: auto;
+        height: 300px;
+    }
+
+    .foto-larga {
+        grid-column: span 2;
+    }
+
+    .rodape-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 400px) {
+    .banner h1 {
+        font-size: 38px;
+    }
+
+    .banner-foto {
+        height: 280px;
+    }
+
+    .fotos {
+        grid-template-columns: 1fr;
+    }
+
+    .foto,
+    .foto-grande,
+    .foto-larga {
+        grid-column: auto;
+        height: 250px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto;
+        transition: none;
     }
 }
