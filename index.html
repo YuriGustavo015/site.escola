@@ -1,109 +1,197 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#0b3d91">
-    <title>E.E. Presidente Arthur Bernardes da Silva</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b3d91">
+  <meta name="description" content="Site da E.E. Presidente Arthur Bernardes da Silva. Educação, conhecimento, respeito e futuro.">
+  <title>E.E. Presidente Arthur Bernardes da Silva</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header class="topo" id="inicio">
+    <div class="container navegacao">
+      <a href="#inicio" class="logo" aria-label="Página inicial">
+        <span class="simbolo">E</span>
+        <span class="logo-texto">
+          <strong>E.E. Presidente Arthur Bernardes da Silva</strong>
+          <small>EDUCAÇÃO • CONHECIMENTO • FUTURO</small>
+        </span>
+      </a>
 
-    <header class="topo" id="inicio">
-        <div class="container navegacao">
-            <a href="#inicio" class="logo">
-                <span class="simbolo">E</span>
-                <span>
-                    <strong>E.E. Presidente Arthur Bernardes da Silva</strong>
-                    <small>EDUCAÇÃO • CONHECIMENTO • FUTURO</small>
-                </span>
-            </a>
+      <input type="checkbox" id="alternar-menu" aria-label="Abrir menu">
+      <label for="alternar-menu" class="menu-botao" aria-hidden="true">&#9776;</label>
 
-            <input type="checkbox" id="alternar-menu">
-            <label for="alternar-menu" class="menu-botao">&#9776;</label>
+      <nav class="menu" aria-label="Navegação principal">
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#projeto">Projeto</a>
+      </nav>
+    </div>
+  </header>
 
-            <nav class="menu">
-                <a href="#inicio">Início</a>
-                <a href="#sobre">Sobre</a>
-                <a href="#galeria">Galeria</a>
-                <a href="#projeto">Projeto</a>
-            </nav>
+  <main>
+    <section class="inicio-secao">
+      <div class="container inicio-conteudo">
+        <span class="etiqueta etiqueta-clara">BEM-VINDO(A) À NOSSA ESCOLA</span>
+        <h1>Conhecimento que inspira.<br><span>Futuro que transforma.</span></h1>
+        <p>Construindo o futuro através do conhecimento, da inovação e do respeito.</p>
+        <a class="botao-principal" href="#sobre">
+          Conheça nossa escola <span aria-hidden="true">→</span>
+        </a>
+        <div class="destaque-frase">
+          <span>✦</span> Aprender, crescer e construir novas possibilidades.
         </div>
-    </header>
+      </div>
 
-    <main>
-        <section class="inicio-secao">
-            <div class="container">
-                <h1>Boas-vindas à nossa escola</h1>
-                <p>Construindo o futuro através do conhecimento, inovação e respeito.</p>
-            </div>
-        </section>
+      <div class="forma forma-um"></div>
+      <div class="forma forma-dois"></div>
 
-        <section class="sobre secao" id="sobre">
-            <div class="container">
-                <div class="titulo">
-                    <span class="etiqueta">SOBRE NÓS</span>
-                    <h2>Nossa história e compromisso</h2>
-                </div>
-                <div class="cartoes">
-                    <article class="cartao">
-                        <h3>Missão</h3>
-                        <p>Oferecer ensino público de qualidade focado no desenvolvimento integral do estudante.</p>
-                    </article>
-                    <article class="cartao">
-                        <h3>Visão</h3>
-                        <p>Ser referência em inovação pedagógica e acolhimento escolar.</p>
-                    </article>
-                    <article class="cartao">
-                        <h3>Valores</h3>
-                        <p>Respeito, cidadania, ética e colaboração.</p>
-                    </article>
-                </div>
-            </div>
-        </section>
+      <div class="hero-simbolo" aria-hidden="true">
+        <div class="livro livro-azul">CONHECIMENTO</div>
+        <div class="livro livro-amarelo">APRENDIZAGEM</div>
+        <div class="livro livro-branco">FUTURO</div>
+        <span class="estrela estrela-um">✦</span>
+        <span class="estrela estrela-dois">✧</span>
+      </div>
+    </section>
 
-        <section class="galeria secao" id="galeria">
-            <div class="container">
-                <div class="titulo">
-                    <span class="etiqueta">REGISTROS DA NOSSA ESCOLA</span>
-                    <h2>Nossa escola em <span>imagens.</span></h2>
-                    <p>Confira alguns espaços que fazem parte da nossa história.</p>
-                </div>
+    <section class="atalhos">
+      <div class="container atalhos-grid">
+        <a href="#sobre" class="atalho">
+          <span class="atalho-icone icone-azul">⌂</span>
+          <span>
+            <strong>Sobre a escola</strong>
+            <small>Nossa missão e valores</small>
+          </span>
+          <b aria-hidden="true">↗</b>
+        </a>
 
-                <div class="fotos">
-                    <figure class="foto foto-grande">
-                        <img src="imagens/fachada.jpeg" alt="Fachada da escola" loading="lazy">
-                        <figcaption>01 — Fachada da escola</figcaption>
-                    </figure>
+        <a href="#galeria" class="atalho">
+          <span class="atalho-icone icone-laranja">▧</span>
+          <span>
+            <strong>Galeria de imagens</strong>
+            <small>Conheça nossos espaços</small>
+          </span>
+          <b aria-hidden="true">↗</b>
+        </a>
 
-                    <figure class="foto">
-                        <img src="imagens/patio.jpeg" alt="Pátio interno" loading="lazy">
-                        <figcaption>02 — Pátio interno</figcaption>
-                    </figure>
+        <a href="#projeto" class="atalho">
+          <span class="atalho-icone icone-verde">✧</span>
+          <span>
+            <strong>Nosso projeto</strong>
+            <small>Tecnologia e criatividade</small>
+          </span>
+          <b aria-hidden="true">↗</b>
+        </a>
+      </div>
+    </section>
 
-                    <figure class="foto">
-                        <img src="imagens/ambiente.jpeg" alt="Ambiente com mesas e computadores" loading="lazy">
-                        <figcaption>03 — Ambiente interno</figcaption>
-                    </figure>
+    <section class="sobre secao" id="sobre">
+      <div class="container">
+        <div class="titulo">
+          <span class="etiqueta">SOBRE NÓS</span>
+          <h2>Nossa história e <span>compromisso.</span></h2>
+          <p>A educação abre caminhos e ajuda cada estudante a descobrir seu potencial.</p>
+        </div>
 
-                    <figure class="foto foto-larga">
-                        <img src="imagens/area-verde.jpeg" alt="Área verde e quadra da escola" loading="lazy">
-                        <figcaption>04 — Área verde e esportes</figcaption>
-                    </figure>
-                </div>
-            </div>
-        </section>
+        <div class="cartoes">
+          <article class="cartao">
+            <span class="cartao-icone azul">◎</span>
+            <h3>Missão</h3>
+            <p>Oferecer ensino público de qualidade focado no desenvolvimento integral do estudante.</p>
+          </article>
 
-        <section class="projeto secao" id="projeto">
-            <div class="container projeto-grid">
-                <div>
-                    <span class="etiqueta etiqueta-clara">NOSSO PROJETO</span>
-                    <h2>Tecnologia e criatividade em ação.</h2>
-                    <p>Este site foi desenvolvido como um projeto escolar utilizando HTML e CSS. A ideia é apresentar uma escola de forma organizada, acessível e visualmente agradável.</p>
-                </div>
-            </div>
-        </section>
-    </main>
+          <article class="cartao">
+            <span class="cartao-icone laranja">✦</span>
+            <h3>Visão</h3>
+            <p>Ser referência em inovação pedagógica, aprendizagem e acolhimento escolar.</p>
+          </article>
 
+          <article class="cartao">
+            <span class="cartao-icone verde">♡</span>
+            <h3>Valores</h3>
+            <p>Respeito, cidadania, ética, responsabilidade e colaboração.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="galeria secao" id="galeria">
+      <div class="container">
+        <div class="titulo titulo-galeria">
+          <span class="etiqueta">REGISTROS DA NOSSA ESCOLA</span>
+          <h2>Nossa escola em <span>imagens.</span></h2>
+          <p>Confira alguns espaços que fazem parte da nossa história.</p>
+        </div>
+
+        <div class="fotos">
+          <figure class="foto foto-grande">
+            <img src="imagens/fachada.jpeg" alt="Fachada da escola" loading="lazy">
+            <figcaption><span>01</span> Fachada da escola</figcaption>
+          </figure>
+
+          <figure class="foto">
+            <img src="imagens/patio.jpeg" alt="Pátio interno da escola" loading="lazy">
+            <figcaption><span>02</span> Pátio interno</figcaption>
+          </figure>
+
+          <figure class="foto">
+            <img src="imagens/ambiente.jpeg" alt="Ambiente com mesas e computadores" loading="lazy">
+            <figcaption><span>03</span> Ambiente interno</figcaption>
+          </figure>
+
+          <figure class="foto foto-larga">
+            <img src="imagens/area-verde.jpeg" alt="Área verde e quadra da escola" loading="lazy">
+            <figcaption><span>04</span> Área verde e esportes</figcaption>
+          </figure>
+        </div>
+
+        <p class="aviso-fotos">
+          Se alguma foto não aparecer, confira se os nomes dos arquivos na pasta
+          <strong>imagens</strong> são exatamente iguais aos usados no código.
+        </p>
+      </div>
+    </section>
+
+    <section class="projeto secao" id="projeto">
+      <div class="container projeto-grid">
+        <div class="projeto-marca" aria-hidden="true">&lt;/&gt;</div>
+
+        <div class="projeto-texto">
+          <span class="etiqueta etiqueta-clara">NOSSO PROJETO</span>
+          <h2>Tecnologia e criatividade <span>em ação.</span></h2>
+          <p>
+            Este site foi desenvolvido como um projeto escolar utilizando HTML e CSS.
+            A proposta é apresentar a escola de forma organizada, acessível e
+            visualmente agradável.
+          </p>
+          <a class="botao-claro" href="#inicio">
+            Voltar ao início <span aria-hidden="true">↑</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container rodape-conteudo">
+      <a href="#inicio" class="logo logo-rodape">
+        <span class="simbolo">E</span>
+        <span class="logo-texto">
+          <strong>E.E. Presidente Arthur Bernardes da Silva</strong>
+          <small>EDUCAÇÃO • CONHECIMENTO • FUTURO</small>
+        </span>
+      </a>
+
+      <p>Educação que transforma possibilidades em caminhos.</p>
+    </div>
+
+    <div class="rodape-final">
+      <div class="container">E.E. Presidente Arthur Bernardes da Silva</div>
+    </div>
+  </footer>
 </body>
 </html>
