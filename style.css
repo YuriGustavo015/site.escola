@@ -421,7 +421,7 @@ a {
   line-height: 1.8;
 }
 
-/* GALERIA DE IMAGENS */
+/* GALERIA DE IMAGENS UNIFORME */
 
 .galeria {
   background: var(--fundo);
@@ -434,27 +434,17 @@ a {
 .fotos {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 18px;
+  gap: 20px;
 }
 
 .foto {
   position: relative;
   overflow: hidden;
   margin: 0;
-  height: 220px;
-  min-width: 0;
+  height: 230px;
   border-radius: 15px;
   background: #dbe8f5;
   box-shadow: 0 7px 20px #173c6610;
-}
-
-.foto-grande {
-  grid-column: span 2;
-  height: 320px;
-}
-
-.foto-larga {
-  grid-column: span 2;
 }
 
 .foto img {
@@ -486,7 +476,7 @@ a {
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 19px;
+  padding: 15px;
   color: white;
   font-size: 12px;
   font-weight: 700;
@@ -706,9 +696,7 @@ a {
     grid-template-columns: 1fr;
   }
 
-  .foto-grande,
-  .foto-larga {
-    grid-column: span 1;
+  .foto {
     height: 220px;
   }
 
