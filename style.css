@@ -421,7 +421,7 @@ a {
   line-height: 1.8;
 }
 
-/* GALERIA DE IMAGENS EXPANDIDA (FOTOS MAIORES) */
+/* GALERIA DE IMAGENS VERTICAIS COMPLETAS (FORMATO RETRATO) */
 
 .galeria {
   background: var(--fundo);
@@ -433,7 +433,7 @@ a {
 
 .fotos {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 colunas para cada imagem ficar mais larga */
+  grid-template-columns: repeat(3, 1fr); /* 3 colunas para ajustar cartões verticais */
   gap: 24px;
 }
 
@@ -441,7 +441,7 @@ a {
   position: relative;
   overflow: hidden;
   margin: 0;
-  height: 320px; /* Aumentado de 230px para 320px */
+  height: 520px; /* Altura suficiente para mostrar árvores, bancos e o chão quase sem cortar */
   border-radius: 18px;
   background: #dbe8f5;
   box-shadow: 0 8px 24px #173c6612;
@@ -452,6 +452,7 @@ a {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center; /* Mantém a imagem centralizada para exibir topo e base */
   transition: transform .45s;
 }
 
@@ -462,7 +463,7 @@ a {
 .foto:after {
   content: "";
   position: absolute;
-  inset: 40% 0 0;
+  inset: 50% 0 0;
   background: linear-gradient(transparent, #061d36d0);
   pointer-events: none;
 }
@@ -587,6 +588,18 @@ a {
   font-size: 10px;
 }
 
+/* TELAS MÉDIAS (TABLETS) */
+
+@media (max-width: 900px) {
+  .fotos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .foto {
+    height: 480px;
+  }
+}
+
 /* CELULARES */
 
 @media (max-width: 650px) {
@@ -697,7 +710,7 @@ a {
   }
 
   .foto {
-    height: 250px;
+    height: 450px;
   }
 
   .foto figcaption {
